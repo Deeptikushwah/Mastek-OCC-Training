@@ -1,0 +1,30 @@
+
+
+  function validate(event){
+    const firstName=document.getElementById("firstName").value;
+    const lastName=document.getElementById("lastName").value;
+    const city=document.getElementById("city").value;
+    if(firstName=="" ){
+        // alert("Please enter First Name");
+        const errFirstName=document.getElementById("errFirstName");
+        errFirstName.innerText="Please enter the First Name";
+        event.preventDefault();
+        return false;
+    }
+    if(lastName=="" ){
+        // alert("Please enter First Name");
+        const errLastName=document.getElementById("errLastName");
+        errLastName.innerText="Please enter the Last Name";
+        event.preventDefault();
+        return false;
+    }
+    if(city=="" ){
+        // alert("Please enter First Name");
+        const errCity=document.getElementById("errCity");
+        errCity.innerText="Please enter the city Name";
+        event.preventDefault();
+        return false;
+    }
+
+    return true;
+} 

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+    <title></title>
+    <script src="js/Knockoutv3.5.1.js"></script>
+    </head>
+    <body>
+        <div>
+            <label for="myHobby">My Hobby</label>
+            <input type="text" data-bind="value: myHobby">
+        </div> 
+        <div>
+           
+            Welcome <span data-bind="text: myHobby"></span>
+        </div>
+        
+        <script>
+        
+        const person={
+            myHobby:ko.observable("Enter hobby")
+        }
+        ko.applyBindings(person);
+        </script>
+
+    </body>
+
+</html>
